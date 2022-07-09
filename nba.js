@@ -30,7 +30,7 @@ d3.json ("https://raw.githubusercontent.com/jorgebalboa1998/nba/main/nba.json").
     //Escala color (en función de la altura)
     var escalacolor = d3.scaleLinear()
     .domain([1.95, 2.20])
-    .range(["blue", "red"])
+    .range(["blue", "green"])
 
     //SVG
     var elementoSVG = d3.select("body")
@@ -70,26 +70,23 @@ d3.json ("https://raw.githubusercontent.com/jorgebalboa1998/nba/main/nba.json").
     .attr("text-anchor", "middle")
     .attr("x", margin.left)
     .attr("y", margin.top-10)
-    .text("Altura")
+    .text("Altura(cm)")
 
     //Visualizar eje X
-    var ejeY = d3.axisBottom (escalaX)
+    var ejeX = d3.axisBottom (escalaX)
 
     //Pintar eje X
     elementoSVG
-    .append("g")
-    .attr("transform", "translate (" + (height - margin.botton/2) + ",0)")
-    .call(ejeX)
+        .append("g")
+        .attr("transform", "translate (0," + (height - margin.botton/2) + ")")
+        .call(ejeX)
 
     //Añadir etiqueta al eje X
     elementoSVG.append("text")
     .attr("class", "label")
     .attr("text-anchor", "middle")
-    .attr("x", width - margin.right + 40)
+    .attr("x", width - margin.right/2 )
     .attr("y", height - margin.botton/3)
-    .text("Peso")
-
-
-    
+    .text("Peso(Kg)")
 
 })
