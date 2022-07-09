@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Kareem Abdul-Jabbar",
+        "height": 2.18,
+        "weight": 106
+    },
+    {
+        "name": "LeBron James",
+        "height": 2.06,
+        "weight": 113
+    },
+    {
+        "name": "Karl Malone",
+        "height": 2.06,
+        "weight": 113
+    },
+    {
+        "name": "Kobe Bryant",
+        "height": 1.98,
+        "weight": 96
+    },
+    {
+        "name": "Michael Jordan",
+        "height": 1.98,
+        "weight": 98
+    },
+    {
+        "name": "Dirk Nowitzki",
+        "height": 2.13,
+        "weight": 110
+    },
+    {
+        "name": "Wilt Chamberlain",
+        "height": 2.16,
+        "weight": 124
+    },
+    {
+        "name": "Shaquille O'Neal",
+        "height": 2.16,
+        "weight": 147
+    },
+    {
+        "name": "Carmelo Anthony",
+        "height": 2.01,
+        "weight": 108
+    },
+    {
+        "name": "Moses Malone",
+        "height": 2.08,
+        "weight": 118
+    }
+]
