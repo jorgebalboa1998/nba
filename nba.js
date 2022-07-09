@@ -1,4 +1,4 @@
-d3.json ("nba.json").then (function (datos){
+d3.json ("https://raw.githubusercontent.com/jorgebalboa1998/nba/main/nba.json").then (function (datos){
     
     //Dimensiones del gráfico
     var height = 700
@@ -18,7 +18,7 @@ d3.json ("nba.json").then (function (datos){
     .range([0 + margin.left, width - margin.right])
 
     //Escala eje Y
-    var escalaY = dr.scaleLinear()
+    var escalaY = d3.scaleLinear()
     .domain([1.95, 2.20])
     .range([height - margin.botton, 0 + margin.top])
 
@@ -52,6 +52,44 @@ d3.json ("nba.json").then (function (datos){
                .attr("cx", d => escalaX(d.weight))
                .attr("cy", d => escalaY(d.height))
                .attr("fill", d => escalacolor(d.height))
+    
+    //Visualizar eje Y
+    var ejeY = d3.axisLeft (escalaY)
 
+    //Pintar eje Y
+    elementoSVG
+    .append("g")
+    .attr("transform", "translate (" + margin.left + ",0)")
+    .call(ejeY)
+    .selectAll("text")
+        .attr("transform", "rotate(-20)")
+
+    //Añadir etiqueta al eje Y
+    elementoSVG.append("text")
+    .attr("class", "label")
+    .attr("text-anchor", "middle")
+    .attr("x", margin.left)
+    .attr("y", margin.top-10)
+    .text("Altura")
+
+    //Visualizar eje X
+    var ejeY = d3.axisBottom (escalaX)
+
+    //Pintar eje X
+    elementoSVG
+    .append("g")
+    .attr("transform", "translate (" + (height - margin.botton/2) + ",0)")
+    .call(ejeX)
+
+    //Añadir etiqueta al eje X
+    elementoSVG.append("text")
+    .attr("class", "label")
+    .attr("text-anchor", "middle")
+    .attr("x", width - margin.right + 40)
+    .attr("y", height - margin.botton/3)
+    .text("Peso")
+
+
+    
 
 })
