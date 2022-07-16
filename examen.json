@@ -26,7 +26,7 @@
     },
     {
         "alumno": "David",
-        "nota": 8.75,
+        "nota": 8,
         "ranking": 9
     },
     {
@@ -36,17 +36,17 @@
     },
     {
         "alumno": "Pilar",
-        "nota": 8.5,
+        "nota": 6,
         "ranking": 10
     },
     {
         "alumno": "Oscar",
-        "nota": 8.2,
+        "nota": 5,
         "ranking": 5
     },
     {
         "alumno": "Ana",
         "nota": 2.08,
-        "ranking": 8
+        "ranking": 4
     }
 ]
