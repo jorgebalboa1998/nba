@@ -5,6 +5,11 @@
         "ranking": 1
     },
     {
+        "alumno": "Natalia",
+        "nota": 9.75,
+        "ranking": 2
+    },
+    {
         "alumno": "Nuria",
         "nota": 9.5,
         "ranking": 3
@@ -28,11 +33,6 @@
         "alumno": "David",
         "nota": 8,
         "ranking": 7
-    },
-    {
-        "alumno": "Natalia",
-        "nota": 9.75,
-        "ranking": 2
     },
     {
         "alumno": "Pilar",
